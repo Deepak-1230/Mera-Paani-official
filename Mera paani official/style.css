@@ -1,0 +1,1004 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mate SC', serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: left;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative; 
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+nav .fa{
+    display: none;
+}
+#floating-images{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+.things{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: block;
+    justify-content: space-between;
+}
+.acidity-col .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.acidity-col .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.acidity-col h3{
+    text-align: left;
+}
+.acidity-col p{
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.tds-col{
+    margin-top: 10%;
+    display: block;
+    justify-content: space-between;
+}
+.tds-col .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.tds-col .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.tds-col h3{
+    text-align: right;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.tds-col p{
+    color: black;
+    font-size: 18px;
+    text-align: right;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.turbidity-col{
+    margin-top: 10%;
+    display: block;
+    justify-content: space-between;
+}
+.turbidity-col .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.turbidity-col .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.turbidity-col h3{
+    text-align: left;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.turbidity-col p{
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.climate-col{
+    margin-top: 10%;
+    display: block;
+    justify-content: space-between;
+}
+.climate-col .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.climate-col .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.climate-col h3{
+    text-align: right;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.climate-col p{
+    font-size: 18px;
+    color: black;
+    text-align: right;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.temp-col{
+    margin-top: 10%;
+    display: block;
+    justify-content: space-between;
+}
+.temp-col .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.temp-col .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.temp-col h3{
+    text-align: left;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.temp-col p{
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.co2-col{
+    margin-top: 10%;
+    display: block;
+    justify-content: space-between;
+}
+.co2-col .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.co2-col .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.co2-col h3{
+    text-align: right;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.co2-col p{
+    font-size: 18px;
+    color: black;
+    text-align: right;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.zero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.zero-btn:hover{
+    border: 1px solid #f44336;
+    background:#f44336;
+    transition: 1s;
+}
+.acidity{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.col{
+    margin-top: 5%;
+    display: block;
+    justify-content: space-between;
+}
+.acidity-ph .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.acidity-ph .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.acidity-ph h3{
+    font-size: 45px;
+    text-align: left;
+}
+.acidity-ph p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.acidity-def{
+    margin-top: 10%;
+    display: block;
+    justify-content: space-between;
+}
+.acidity-def .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.acidity-def .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.acidity-def h3{
+    font-size: 45px;
+    text-align: right;
+}
+.acidity-def p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.acidity-imp{
+    margin-top: 10%;
+    display: block;
+    justify-content: space-between;
+}
+.acidity-imp .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.acidity-imp .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.acidity-imp h3{
+    font-size: 45px;
+    text-align: left;
+}
+.acidity-imp p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.acidity-dig{
+    margin-top: 10%;
+    display: block;
+    justify-content: space-between;
+}
+.acidity-dig .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.acidity-dig .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.acidity-dig h3{
+    font-size: 45px;
+    text-align: right;
+}
+.acidity-dig p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.text-box h1{
+    font-size: 65px;
+}
+.tds{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.pol{
+    margin-top: 5%;
+    display: block;
+    justify-content: space-between;
+}
+.tds-def .floating-image
+{
+    width: 300px;
+    height: 300px;
+}
+.tds-def .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.tds-def h3{
+    font-size: 45px;
+    text-align: left;
+}
+.tds-def p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.tds-test{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.tds-test .floating-image
+{
+    width: 300px;
+    height: 400px;
+}
+.tds-test .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.tds-test h3{
+    font-size: 45px;
+    text-align: right;
+}
+.tds-test p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.tds-water{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.tds-water .floating-image
+{
+    width: 300px;
+    height: 400px;
+}
+.tds-water .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.tds-water h3{
+    font-size: 45px;
+    text-align: left;
+}
+.tds-water p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+table{
+    width: 400px;
+    padding: 5px;
+}
+th{
+   text-align: left;
+}
+table, th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+ th, td {
+    padding: 5px;
+}
+.tds-low{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.tds-low .floating-image
+{
+    width: 300px;
+    height: 400px;
+}
+.tds-low .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.tds-low h3{
+    font-size: 45px;
+    text-align: right;
+}
+.tds-low p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.fox-btn{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.fox-btn:hover{
+    border: 1px solid #f44336;
+    background:#f44336;
+    transition: 1s;
+}
+.ele-btn{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 88px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.ele-btn:hover{
+    border: 1px solid #f44336;
+    background:#f44336;
+    transition: 1s;
+}
+.help{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.turbidity{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.turb{
+    margin-top: 5%;
+    display: block;
+    justify-content: space-between;
+}
+.turb-def .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.turb-def .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.turb-def h3{
+    font-size: 45px;
+    text-align: left;
+}
+.turb-def p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.turb-water{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.turb-water .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.turb-water .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.turb-water h3{
+    font-size: 45px;
+    text-align: right;
+}
+.turb-water p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.turb-heal{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.turb-heal .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.turb-heal .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.turb-heal h3{
+    font-size: 45px;
+    text-align: left;
+}
+.turb-heal p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.turb-mes{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.turb-mes .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.turb-mes .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.turb-mes h3{
+    font-size: 45px;
+    text-align: right;
+}
+.turb-mes p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.climate{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.clim{
+    margin-top: 5%;
+    display: block;
+    justify-content: space-between;
+}
+.clim-glob .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.clim-glob .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.clim-glob h3{
+    font-size: 45px;
+    text-align: left;
+}
+.clim-glob p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.clim-chan{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.clim-chan .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.clim-chan .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.clim-chan h3{
+    font-size: 45px;
+    text-align: right;
+}
+.clim-chan p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.clim-water{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.clim-water .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.clim-water .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.clim-water h3{
+    font-size: 45px;
+    text-align: left;
+}
+.clim-water p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.clim-tide{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.clim-tide .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.clim-tide .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.clim-tide h3{
+    font-size: 45px;
+    text-align: right;
+}
+.clim-tide p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.temp{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.loc{
+    margin-top: 5%;
+    display: block;
+    justify-content: space-between;
+}
+.temp-water .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.temp-water .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.temp-water h3{
+    font-size: 45px;
+    text-align: left;
+}
+.temp-water p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.temp-imp{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.temp-imp .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.temp-imp .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.temp-imp h3{
+    font-size: 45px;
+    text-align: right;
+}
+.temp-imp p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.temp-factor{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.temp-factor .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.temp-factor .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.temp-factor h3{
+    font-size: 45px;
+    text-align: left;
+}
+.temp-factor p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.temp-units{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.temp-units .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.temp-units .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.temp-units h3{
+    font-size: 45px;
+    text-align: right;
+}
+.temp-units p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.co2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.comp{
+    margin-top: 5%;
+    display: block;
+    justify-content: space-between;
+}
+.co2-gas .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.co2-gas .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.co2-gas h3{
+    font-size: 45px;
+    text-align: left;
+}
+.co2-gas p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.co2-natural{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.co2-natural .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.co2-natural .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.co2-natural h3{
+    font-size: 45px;
+    text-align: right;
+}
+.co2-natural p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}
+.co2-def{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.co2-def .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.co2-def .floating-image.left
+{
+    float: left;
+    margin-right: 30px;
+}
+.co2-def h3{
+    font-size: 45px;
+    text-align: left;
+}
+.co2-def p{
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+}
+.co2-puri{
+    margin-top: 15%;
+    display: block;
+    justify-content: space-between;
+}
+.co2-puri .floating-image
+{
+    width: 200px;
+    height: 200px;
+}
+.co2-puri .floating-image.right
+{
+    float: right;
+    margin-left: 30px;
+}
+.co2-puri h3{
+    font-size: 45px;
+    text-align: right;
+}
+.co2-puri p{
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    margin: 10px 0;
+}

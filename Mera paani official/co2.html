@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>MERA PAANI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()">
+                </i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="mywater.html">MY WATER</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+<div class="text-box">
+    <h1>CO2 COMPOSITION</h1>
+</div>
+</section>
+<section class="co2">
+    <div class="comp"></div>
+    <div class="co2-gas">
+        <img src="images/co2gas.png" class="floating-image left"/>
+        <h3>Dissolved Gases in Purified Water </h3>
+        <p> 
+            All purified water is produced by removing impurities from natural or municipal waters. We need to consider the gases possibly present in these feed-waters, their fates as the waters is purified and any potential contamination with the same or other gases during or after purification.
+        </p>   
+    </div>
+    <div class="co2-natural">
+        <img src="images/co2natural.png" class="floating-image right"/>
+        <h3>Gases in Natural Waters </h3>
+        <p>
+            Natural waters are, to a greater or lesser extent, in contact with air. Most of the dissolved gases are absorbed from the air plus CO2 which can come in part from soil and rocks in contact with the water. Municipal waters are obtained by treating natural waters to make them safe to drink. These processes tend to have very little effect on the dissolved gas content of the water, generally increasing their contact with ambient air and reducing the variability due to local sources.
+        </p>
+    </div>
+    <div class="co2-def">
+        <img src="images/co2def.png" class="floating-image left"/>
+        <h3>Carbon Dioxide</h3>
+        <p>
+            Carbon dioxide behaves very differently from the other gases in air. When it dissolves in water, it reacts to set up a series of equilibria:
+            <br>
+            CO2 + H2O  ↔  H2CO3  ↔  H+ + HCO3-  ↔  2H+ + CO32-
+            <br>
+            A small fraction of the CO2 that dissolves in water reacts rapidly to form carbonic acid. This, in turn, partially dissociates to form hydrogen, bicarbonate and carbonate ions. CO2 will continue to dissolve until equilibrium is reached.
+        </p>
+    </div>
+    <div class="co2-puri">
+        <img src="images/co2puri.png" class="floating-image right"/>
+        <h3>After Purification</h3>
+        <p>
+            1)  CO2 is removed completely from water that has been purified by ion-exchange or, to a large extent, by EDI.
+            <br>
+            2)  High levels of CO2 will use up a significant amount of the capacity of the ion-exchange resin bed or could overload EDI. With 25ppm CO2 in the feed-water over two-thirds of the capacity of the mixed-bed resins can be used up by the CO2.
+            <br>
+            3)  With high CO2 feed waters removal of the CO2 prior to ion-exchange could increase pack life times by a factor of three or more.
+        </p>  
+    </div>
+    <div>
+        <script>
+            window.watsonAssistantChatOptions = {
+                integrationID: "8a96f889-1516-4970-a3c7-8ee056caa941", // The ID of this integration.
+                region: "eu-gb", // The region your integration is hosted in.
+                serviceInstanceID: "3b1d659a-3270-46cc-8ec8-255c011be1ab", // The ID of your service instance.
+                onLoad: function(instance) { instance.render(); }
+              };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+              document.head.appendChild(t);
+            });
+          </script>
+    </div>
+ </section>

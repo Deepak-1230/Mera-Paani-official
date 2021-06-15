@@ -1,0 +1,126 @@
+<html>
+<head>
+  <div style="text-align: right; margin-top: 50px;margin-right: 50px;">
+    <script>
+      function printPage() {
+        window.print();
+      }
+      </script>
+     <div>
+      <input type="button" value="Print this page" onclick="printPage()"/>
+     </div>
+  </div>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Day');
+      
+      data.addColumn('number', 'TDS');
+      
+      
+
+      data.addRows([
+      [	1	,	698	]	,
+[	2	,	699	]	,
+[	3	,	700	]	,
+[	4	,	701	]	,
+[	5	,	702	]	,
+[	6	,	703	]	,
+[	7	,	704	]	,
+[	8	,	720	]	,
+[	9	,	721	]	,
+[	10	,	722	]	,
+[	11	,	723	]	,
+[	12	,	724	]	,
+[	13	,	725	]	,
+[	14	,	726	]	,
+[	15	,	727	]	,
+[	16	,	728	]	,
+[	17	,	693	]	,
+[	18	,	694	]	,
+[	19	,	695	]	,
+[	20	,	696	]	,
+[	21	,	697	]	,
+[	22	,	730	]	,
+[	23	,	731	]	,
+[	24	,	732	]	,
+[	25	,	733	]	,
+[	26	,	734	]	,
+[	27	,	735	]	,
+[	28	,	714	]	,
+[	29	,	703	]	,
+[	30	,	704	]	,
+[	31	,	705	]	,
+[	32	,	706	]	,
+[	33	,	707	]	,
+[	34	,	708	]	,
+[	35	,	709	]	,
+[	36	,	689	]	,
+[	37	,	690	]	,
+[	38	,	691	]	,
+[	39	,	692	]	,
+[	40	,	693	]	,
+[	41	,	694	]	,
+[	42	,	695	]	,
+[	43	,	696	]	,
+[	44	,	721	]	,
+[	45	,	722	]	,
+[	46	,	723	]	,
+[	47	,	724	]	,
+[	48	,	725	]	,
+[	49	,	726	]	,
+[	50	,	727	]	,
+[	51	,	732	]	,
+[	52	,	745	]	,
+[	53	,	746	]	,
+[	54	,	747	]	,
+[	55	,	748	]	,
+[	56	,	749	]	,
+[	57	,	750	]	,
+[	58	,	751	]	,
+[	59	,	752	]	,
+[	60	,	735	]	,
+[	61	,	736	]	,
+[	62	,	737	]	,
+[	63	,	738	]	,
+[	64	,	739	]	,
+[	65	,	740	]	,
+[	66	,	768	]	,
+[	67	,	769	]	,
+[	68	,	770	]	,
+[	69	,	771	]	,
+[	70	,	772	]	
+
+
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Observations of TDS',
+          subtitle: 'Fox lake'
+        },
+        width: 900,
+        height: 500,
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
+        }
+      };
+
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  </script>
+</head>
+<body>
+  <div id="line_top_x"></div>
+</body>
+</html>
+

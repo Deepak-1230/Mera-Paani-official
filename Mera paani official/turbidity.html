@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>MERA PAANI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()">
+                </i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="mywater.html">MY WATER</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+<div class="text-box">
+    <h1>TURBIDITY</h1>
+</div>
+</section>
+<section class="turbidity">
+    <div class="turb"></div>
+    <div class="turb-def">
+        <img src="images/turbdef.png" class="floating-image left"/>
+        <h3>Turbidity and Water</h3>
+        <p> 
+            Turbidity is the measure of relative clarity of a liquid. It is an optical characteristic of water and is a measurement of the amount of light that is scattered by material in the water when a light is shined through the water sample. The higher the intensity of scattered light, the higher the turbidity. Material that causes water to be turbid include clay, silt, very tiny inorganic and organic matter, algae, dissolved colored organic compounds, and plankton and other microscopic organisms.
+        </p>      
+    </div>
+    <div class="turb-water">
+        <img src="images/turbwater.png" class="floating-image right"/>
+        <h3>Turbidity and Water quality</h3>
+        <p>
+            High concentrations of particulate matter affect light penetration and  ecological productivity, recreational values, and habitat quality, and cause lakes to fill in faster. In streams, increased sedimentation and siltation can occur, which can result in harm to habitat areas for fish and other aquatic life. Particles also provide attachment places for other pollutants, notably metals and bacteria. 
+        </p>
+    </div>
+    <div class="turb-heal">
+        <img src="images/turbheal.png" class="floating-image left"/>
+        <h3>Turbidity and Human health</h3>
+        <p>
+            Excessive turbidity, or cloudiness, in drinking water is aesthetically unappealing, and may also represent a health concern. Turbidity can provide food and shelter for pathogens. If not removed, the causes of high turbidity can promote regrowth of pathogens in the water, leading to waterborne disease outbreaks, which have caused significant cases of intestinal sickness throughout the United States and the world. Although turbidity is not a direct indicator of health risk, numerous studies show a strong relationship between removal of turbidity and removal of protozoa. The particles of turbidity provide "shelter" for microbes by reducing their exposure to attack by disinfectants. Microbial attachment to particulate material has been considered to aid in microbe survival.
+        </p>
+    </div>
+    <div class="turb-mes">
+        <img src="images/turbmes.png" class="floating-image right"/>
+        <h3>Measuring turbidity</h3>
+        <p>
+            State-of-the-art turbidity meters are beginning to be installed in rivers to provide an instantaneous turbidity reading. A long device is lowered into the water and at the end is a turbidity sensor. It reads turbidity in the river by shining a light into the water and reading how much light is reflected back to the sensor. These devices can house multiple water-quality sensors, such as a conductivity sensor to measure electrical conductance of the water, which is strongly influenced by dissolved solids, and a temperature gauge.
+        </p>  
+    </div>
+    <div>
+        <script>
+            window.watsonAssistantChatOptions = {
+                integrationID: "8a96f889-1516-4970-a3c7-8ee056caa941", // The ID of this integration.
+                region: "eu-gb", // The region your integration is hosted in.
+                serviceInstanceID: "3b1d659a-3270-46cc-8ec8-255c011be1ab", // The ID of your service instance.
+                onLoad: function(instance) { instance.render(); }
+              };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+              document.head.appendChild(t);
+            });
+          </script>
+    </div>
+ </section>

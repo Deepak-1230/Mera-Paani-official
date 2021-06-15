@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>MERA PAANI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()">
+                </i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="mywater.html">MY WATER</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+<div class="text-box">
+    <h1>CLEAN WATER AND SANITATION</h1>
+    <P>From intelligent solutions for small farmers to recycling showers, technology can make a<br>significant impact on the availability of water and its consumption.        
+    </P>
+</div>
+
+</section>
+
+<section class="things">
+    <h1></h1>
+    <p></p>
+
+    <div class="row">
+        <div class="acidity-col">
+            <img src="images/acidity.png" class="floating-image left"/>
+            <h3>ACIDITY RATE</h3>
+            <p>pH is a scale used to specify the acidity or basicity of an aqueous solution.<br> Acidic solutions are measured to have lower pH values than basic or alkaline<br>solutions. The pH scale is logarithmic and inversely indicates the concentration<br>of hydrogen ions in the solution.
+            </p>
+            <a href="acidity.html" class="zero-btn">Learn more</a>
+        </div>
+        <div class="tds-col">
+            <img src="images/tds.png" class="floating-image right"/>
+            <h3>TOTAL DISSOLVED SOLIDS (TDS)</h3>
+            <p>Measure of the dissolved combined content of all inorganic and organic<br> substances present in a liquid in molecular, ionized, or micro-granular suspended form.
+            </p>
+            <a href="tds.html" class="zero-btn">Learn more</a>
+        </div>
+        <div class="turbidity-col">
+            <img src="images/Turbidity.png" class="floating-image left"/>
+            <h3>TURBIDITY</h3>
+            <p>Measure of the degree to which the water loses its transparency due to<br> the presence of suspended particulates. The more total suspended solids in the water,<br> the murkier it seems and the higher the turbidity.
+            </p>
+            <a href="turbidity.html" class="zero-btn">Learn more</a>
+        </div>
+        <div class="climate-col">
+            <img src="images/climate.png" class="floating-image right"/>
+            <h3>CLIMATE CHANGE</h3>
+            <p>Change in the average weather patterns that have come to define Earth's<br> local, regional and global climates. These changes have a broad range of observed<br> effects that are synonymous with the term.
+            </p>
+            <a href="climate.html" class="zero-btn">Learn more</a>
+        </div>
+        <div class="temp-col">
+            <img src="images/temp.png" class="floating-image left"/>
+            <h3>TEMPERATURE</h3>
+            <p> the manifestation of thermal energy, present in all matter, which is<br> the source of the occurrence of heat, a flow of energy, when a body is in<br> contact with another that is colder or hotter.
+            </p>
+            <a href="temp.html" class="zero-btn">Learn more</a>
+        </div>
+        <div class="co2-col">
+            <img src="images/co2.png" class="floating-image right"/>
+            <h3>CO2 COMPOSITON</h3>
+            <p>CO2 a chemical compound composed of one carbon and two oxygen atoms.<br> It is often referred to by its formula CO2. It is present in the <br>Earth's atmosphere at a low concentration and acts as a greenhouse gas.
+            </p>
+            <a href="co2.html" class="zero-btn">Learn more</a>
+        </div>
+    </div>
+    <div>
+        <script>
+            window.watsonAssistantChatOptions = {
+                integrationID: "8a96f889-1516-4970-a3c7-8ee056caa941", // The ID of this integration.
+                region: "eu-gb", // The region your integration is hosted in.
+                serviceInstanceID: "3b1d659a-3270-46cc-8ec8-255c011be1ab", // The ID of your service instance.
+                onLoad: function(instance) { instance.render(); }
+              };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+              document.head.appendChild(t);
+            });
+          </script>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

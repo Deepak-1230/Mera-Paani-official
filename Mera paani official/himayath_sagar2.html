@@ -1,0 +1,139 @@
+<html>
+<head>
+  <div style="text-align: right; margin-top: 50px;margin-right: 50px;">
+    <script>
+      function printPage() {
+        window.print();
+      }
+      </script>
+     <div>
+      <input type="button" value="Print this page" onclick="printPage()"/>
+     </div>
+  </div>
+</head>
+<body>
+  <div style="text-align: center;">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Day');
+      data.addColumn('number', 'TDS');
+      data.addRows([
+      [	1	,	378	]	,
+[	2	,	379	]	,
+[	3	,	380	]	,
+[	4	,	381	]	,
+[	5	,	374	]	,
+[	6	,	375	]	,
+[	7	,	382	]	,
+[	8	,	383	]	,
+[	9	,	384	]	,
+[	10	,	385	]	,
+[	11	,	386	]	,
+[	12	,	375	]	,
+[	13	,	376	]	,
+[	14	,	382	]	,
+[	15	,	383	]	,
+[	16	,	384	]	,
+[	17	,	385	]	,
+[	18	,	386	]	,
+[	19	,	374	]	,
+[	20	,	375	]	,
+[	21	,	376	]	,
+[	22	,	380	]	,
+[	23	,	381	]	,
+[	24	,	374	]	,
+[	25	,	375	]	,
+[	26	,	382	]	,
+[	27	,	380	]	,
+[	28	,	381	]	,
+[	29	,	374	]	,
+[	30	,	375	]	,
+[	31	,	382	]	,
+[	32	,	383	]	,
+[	33	,	384	]	,
+[	34	,	385	]	,
+[	35	,	386	]	,
+[	36	,	380	]	,
+[	37	,	381	]	,
+[	38	,	374	]	,
+[	39	,	375	]	,
+[	40	,	382	]	,
+[	41	,	380	]	,
+[	42	,	381	]	,
+[	43	,	374	]	,
+[	44	,	375	]	,
+[	45	,	374	]	,
+[	46	,	375	]	,
+[	47	,	375	]	,
+[	48	,	382	]	,
+[	49	,	383	]	,
+[	50	,	384	]	,
+[	51	,	385	]	,
+[	52	,	386	]	,
+[	53	,	382	]	,
+[	54	,	383	]	,
+[	55	,	384	]	,
+[	56	,	385	]	,
+[	57	,	379	]	,
+[	58	,	380	]	,
+[	59	,	381	]	,
+[	60	,	374	]	,
+[	61	,	375	]	,
+[	62	,	382	]	,
+[	63	,	384	]	,
+[	64	,	385	]	,
+[	65	,	386	]	,
+[	66	,	382	]	,
+[	67	,	383	]	,
+[	68	,	384	]	,
+[	69	,	385	]	,
+[	70	,	379	]	
+
+
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Observations of TDS',
+          subtitle: 'Himayath Sagar'
+        },
+        width: 900,
+        height: 500,
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
+        }
+      };
+
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+  </script>
+  <div id="line_top_x"></div>
+  </div>
+  <div>
+    <script>
+      window.watsonAssistantChatOptions = {
+          integrationID: "8a96f889-1516-4970-a3c7-8ee056caa941", // The ID of this integration.
+          region: "eu-gb", // The region your integration is hosted in.
+          serviceInstanceID: "3b1d659a-3270-46cc-8ec8-255c011be1ab", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </div>
+</body>
+</html>
+
